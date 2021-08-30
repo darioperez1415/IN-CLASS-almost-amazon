@@ -12,6 +12,14 @@ const getAuthors = () => new Promise((resolve, reject) => {
 });
 
 // DELETE AUTHOR
+const deleteAuthor = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.delete(`${dbUrl}/authors/${firebaseKey}.json`)
+    .then(() => {
+      getAuthors().then(resolve);
+    })
+    .catch(reject);
+});
+
 // CREATE AUTHOR
 const createAuthor = (authorObject) => new Promise((resolve, reject) => {
   axios.post(`${dbUrl}/authors.json`, authorObject)
@@ -25,6 +33,16 @@ const createAuthor = (authorObject) => new Promise((resolve, reject) => {
 });
 
 // UPDATE AUTHOR
+const updateAuthor = (bookObj) => new Promise((resolve, reject) => {
+  axios.patch(`${dbUrl}/authors/${bookObj.firebaseKey}.json`, bookObj)
+    .then(() => getAuthors().then(resolve))
+    .catch(reject);
+});
 // SEARCH AUTHORS
 
-export { getAuthors, createAuthor };
+export {
+  getAuthors,
+  createAuthor,
+  deleteAuthor,
+  updateAuthor,
+};
