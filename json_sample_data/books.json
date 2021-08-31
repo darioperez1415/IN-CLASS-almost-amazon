@@ -1,50 +1,83 @@
 {
-  "-MTpclfzY9GLtKDsDYTs": {
-    "firebaseKey": "-MTpclfzY9GLtKDsDYTs",
-    "price": 25.99,
-    "title": "Fifty Shades of Chicken",
-    "image": "https://firebasestorage.googleapis.com/v0/b/almost-1564e.appspot.com/o/books%2Fchicken.jpg?alt=media&token=77e7cf36-4f72-4ee0-a487-dd1d366ced63",
+  "-MiBsBKGWFEU-yluJkL-": {
+    "author_id": "-MiBt86VzkC-EGmJnxjm",
+    "firebaseKey": "-MiBsBKGWFEU-yluJkL-",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/91+NBrXG-PL.jpg",
+    "price": "24.99",
+    "description": "",
     "sale": false,
-    "author_id": "-MTpcli73mfiIqW0lpPe"
+    "title": "A Promised Land"
   },
-  "-MTpclg-BDWqEqyNcYzx": {
-    "firebaseKey": "-MTpclg-BDWqEqyNcYzx",
-    "price": 15.45,
-    "title": "Fifty Shades of Bacon",
-    "image": "https://firebasestorage.googleapis.com/v0/b/almost-1564e.appspot.com/o/books%2Fbacon.jpg?alt=media&token=4641983b-59a5-4d1f-8e8e-7f2114f02455",
+  "-MiBsknNSQ6aBG1-2lQS": {
+    "author_id": "-MiBsfuTafbEQ7eAULxV",
+    "firebaseKey": "-MiBsknNSQ6aBG1-2lQS",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/A1agLFsWkOL.jpg",
+    "price": "12.99",
+    "description": "",
     "sale": true,
-    "author_id": "-MTpcli9kmjpvbdr-ckb"
+    "title": "Children of Blood and Bone"
   },
-  "-MTpclg1yedrHyxkTEvt": {
-    "firebaseKey": "-MTpclg1yedrHyxkTEvt",
-    "price": 5,
-    "title": "Fifty Shades of Kale",
-    "image": "https://firebasestorage.googleapis.com/v0/b/almost-1564e.appspot.com/o/books%2Fkale.jpg?alt=media&token=cce4b2dc-4ee5-4e80-93a3-c33d3817880e",
+  "-MiBuCve4-r_H-RLUOh2": {
+    "author_id": "-MiBtwf1BwN9pGavQeR3",
+    "firebaseKey": "-MiBuCve4-r_H-RLUOh2",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51529Lfc2ML.jpg",
+    "price": "30.00",
+    "description": "",
     "sale": false,
-    "author_id": "-MTpcliA_-GtWZHpb8sf"
+    "title": "A People's History of the United States of America"
   },
-  "-MTpclg3RLFK-14Pu-YM": {
-    "firebaseKey": "-MTpclg3RLFK-14Pu-YM",
-    "price": 2,
-    "title": "Fifteen Shades for Grey",
-    "image": "https://firebasestorage.googleapis.com/v0/b/almost-1564e.appspot.com/o/books%2Fanimals.jpeg?alt=media&token=bf85ace1-db04-42c1-82d5-56ce58979721",
+  "-MiBuU13EaKmGOMjJF-X": {
+    "author_id": "-MiBuOfHv9NCKB_cneij",
+    "firebaseKey": "-MiBuU13EaKmGOMjJF-X",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81rRRmZZvZL.jpg",
+    "price": "15.89",
+    "description": "",
     "sale": false,
-    "author_id": "-MTpcliCeUeUNMpZ-Kog"
+    "title": "Concrete Rose"
   },
-  "-MTpclg6Ax7Lg5iq3tOs": {
-    "firebaseKey": "-MTpclg6Ax7Lg5iq3tOs",
-    "price": 50,
-    "title": "Fifty Shades of Zombie",
-    "image": "https://firebasestorage.googleapis.com/v0/b/almost-1564e.appspot.com/o/books%2Fzombie.jpg?alt=media&token=4e350713-95ba-4dc6-8091-c2fd5bb2bb27",
+  "-MiBuqoYjFwbXyA8oiiw": {
+    "author_id": "-MiBulenBnY8by9Xn7q1",
+    "firebaseKey": "-MiBuqoYjFwbXyA8oiiw",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/A1Cu4ywUeyL.jpg",
+    "price": "25.00",
+    "description": "",
     "sale": true,
-    "author_id": "-MTpcliDmrp15A1WIE4U"
+    "title": "The Underground Railroad"
   },
-  "-MTpclg4KKMZ4FUaEE2b": {
-    "firebaseKey": "-MTpclg4KKMZ4FUaEE2b",
-    "price": 0.75,
-    "title": "Fifty Shades of Gravy",
-    "image": "https://firebasestorage.googleapis.com/v0/b/almost-1564e.appspot.com/o/books%2Fgravy.jpg?alt=media&token=1cdec29d-f7d5-4100-bd09-684fe57235e4",
+  "-MiBvEFJTI3FmTzDu_3V": {
+    "author_id": "-MiBv9_aOEJQWoobjz_U",
+    "firebaseKey": "-MiBvEFJTI3FmTzDu_3V",
+    "image": "https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale/jackets/9781526622402.jpg",
+    "price": "12.99",
+    "description": "",
+    "sale": true,
+    "title": "Hood Feminism"
+  },
+  "-MiBvW8ME_DvO2GzwQ8D": {
+    "author_id": "-MiBvQiWr6XNwNa1i3-0",
+    "firebaseKey": "-MiBvW8ME_DvO2GzwQ8D",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81Uf1dTjfQL.jpg",
+    "price": "15.00",
+    "description": "",
     "sale": false,
-    "author_id": "-MTpcliGnhDSsyvILIoJ"
+    "title": "A Blade So Black"
+  },
+  "-MiBvf3bIyooE6x4nLLB": {
+    "author_id": "-MiBvQiWr6XNwNa1i3-0",
+    "firebaseKey": "-MiBvf3bIyooE6x4nLLB",
+    "image": "https://m.media-amazon.com/images/I/51BZdlchEsL.jpg",
+    "price": "14.99",
+    "description": "",
+    "sale": false,
+    "title": "A Dream So Dark"
+  },
+  "-MiBwAF5wOY00AYJm7cR": {
+    "author_id": "-MiBw4tCvNZd23yTVDQw",
+    "firebaseKey": "-MiBwAF5wOY00AYJm7cR",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61GSqXVhhKL.jpg",
+    "price": "12.00",
+    "description": "",
+    "sale": false,
+    "title": "The Fire Next Time"
   }
 }

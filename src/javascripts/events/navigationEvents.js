@@ -1,7 +1,7 @@
 import { showAuthors } from '../components/authors';
 import { showBooks } from '../components/books';
 import signOut from '../helpers/auth/signOut';
-import { getAuthors } from '../helpers/data/authorData';
+import { faveAuthors, getAuthors } from '../helpers/data/authorData';
 import { booksOnSale, getBooks } from '../helpers/data/bookData';
 
 // navigation events
@@ -25,6 +25,9 @@ const navigationEvents = () => {
     const searchValue = document.querySelector('#search').value.toLowerCase();
     console.warn(searchValue);
 
+    document.querySelector('favouriteAuthors').addEventListener('click', () => {
+      faveAuthors().then(showAuthors);
+    });
     // WHEN THE USER PRESSES ENTER, MAKE THE API CALL AND CLEAR THE INPUT
     if (e.keyCode === 13) {
       // MAKE A CALL TO THE API TO FILTER ON THE BOOKS
