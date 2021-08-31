@@ -7,7 +7,7 @@ import {
 } from '../helpers/data/bookData';
 import { showBooks } from '../components/books';
 import addAuthorForm from '../components/forms/addAuthorForm';
-import { deleteAuthor, updateAuthor, getSingleAuthor } from '../helpers/data/authorData';
+import { deleteAuthor, updateAuthor, getSingleAuthor, createAuthor } from '../helpers/data/authorData';
 import { showAuthors } from '../components/authors';
 import viewBook from '../components/forms/viewBook';
 
@@ -81,7 +81,19 @@ const domEvents = () => {
         deleteAuthor(id).then(showAuthors);
       }
     }
-    // ADD CLICK EVENT FOR SHOWING FORM FOR ADDING AN AUTHOR
+// CLICK EVENT FOR SUBMITTING FROM FOR ADDING A AUTHOR
+  if (e.target.id.includes('submit-author')) {
+  e.preventDefault();
+  const authorObject = {
+    email: document.querySelector('#email').value,
+    first_name: document.querySelector('#first_name').value,
+    last_name: document.querySelector('#last_name').value,
+    favorite: document.querySelector('#favorite').checked,
+  };
+
+  createAuthor(authorObject).then((authorArray)) => showAuthors(authorArray));
+}  
+ // ADD CLICK EVENT FOR SHOWING FORM FOR ADDING AN AUTHOR
     if (e.target.id.includes('add-author-btn')) {
       addAuthorForm();
     }
