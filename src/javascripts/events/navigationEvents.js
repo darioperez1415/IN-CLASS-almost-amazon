@@ -1,8 +1,8 @@
 import { showAuthors } from '../components/authors';
-import { showBooks } from '../components/books';
 import signOut from '../helpers/auth/signOut';
-import { faveAuthors, getAuthors } from '../helpers/data/authorData';
+import { getAuthors, favoriteAuthors } from '../helpers/data/authorData';
 import { booksOnSale, getBooks } from '../helpers/data/bookData';
+import { showBooks } from '../components/books';
 
 // navigation events
 const navigationEvents = () => {
@@ -12,12 +12,14 @@ const navigationEvents = () => {
 
   // BOOKS ON SALE
   document.querySelector('#sale-books').addEventListener('click', () => {
-    booksOnSale().then(showBooks);
+    console.warn('Clicked Sale Books');
+    booksOnSale().then((books) => showBooks(books));
   });
 
   // ALL BOOKS
   document.querySelector('#all-books').addEventListener('click', () => {
-    getBooks().then(showBooks);
+    console.warn('All Books');
+    getBooks().then((books) => showBooks(books));
   });
 
   // SEARCH
@@ -25,9 +27,6 @@ const navigationEvents = () => {
     const searchValue = document.querySelector('#search').value.toLowerCase();
     console.warn(searchValue);
 
-    document.querySelector('favouriteAuthors').addEventListener('click', () => {
-      faveAuthors().then(showAuthors);
-    });
     // WHEN THE USER PRESSES ENTER, MAKE THE API CALL AND CLEAR THE INPUT
     if (e.keyCode === 13) {
       // MAKE A CALL TO THE API TO FILTER ON THE BOOKS
@@ -38,13 +37,18 @@ const navigationEvents = () => {
     }
   });
 
+  document.querySelector('#authors').addEventListener('click', () => {
+    getAuthors().then((authors) => showAuthors(authors));
+  });
+
+  document.querySelector('#favoriteAuthors').addEventListener('click', () => {
+    favoriteAuthors().then((authors) => showAuthors(authors));
+  });
+
   // FIXME: STUDENTS Create an event listener for the Authors
   // 1. When a user clicks the authors link, make a call to firebase to get all authors
   // 2. Convert the response to an array because that is what the makeAuthors function is expecting
   // 3. If the array is empty because there are no authors, make sure to use the emptyAuthor function
-  document.querySelector('#authors').addEventListener('click', () => {
-    getAuthors().then(showAuthors);
-  });
 };
 
 export default navigationEvents;

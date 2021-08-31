@@ -1,10 +1,10 @@
 // API CALLS FOR AUTHORS
 import axios from 'axios';
 import firebaseConfig from '../../../api/apiKeys';
-// API CALLS FOR BOOKS
 
 const dbUrl = firebaseConfig.databaseURL;
-// GET AUTHOR
+
+// GET AUTHORS
 const getAuthors = () => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/authors.json`)
     .then((response) => resolve(Object.values(response.data)))
@@ -20,23 +20,21 @@ const deleteAuthor = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// GET SINGLE BOOK
-const getSingleAuthor = (firebaseKey) => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/authors/${firebaseKey}.json`)
-    .then((response) => resolve(response.data))
-    .catch(reject);
-});
-
 // CREATE AUTHOR
-const createAuthor = (authorObject) => new Promise((resolve, reject) => {
-  axios.post(`${dbUrl}/authors.json`, authorObject)
+const createAuthor = (authorObj) => new Promise((resolve, reject) => {
+  axios.post(`${dbUrl}/authors.json`, authorObj)
     .then((response) => {
       const body = { firebaseKey: response.data.name };
       axios.patch(`${dbUrl}/authors/${response.data.name}.json`, body)
-        .then(() => {
-          getAuthors().then((booksArray) => resolve(booksArray));
-        });
+        .then(() => getAuthors().then((authors) => resolve(authors)));
     }).catch((error) => reject(error));
+});
+
+// GET SINGLE AUTHOR
+const singleAuthor = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/authors/${firebaseKey}.json`)
+    .then((response) => resolve(response.data))
+    .catch(reject);
 });
 
 // UPDATE AUTHOR
@@ -46,18 +44,18 @@ const updateAuthor = (authorObj) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 // SEARCH AUTHORS
-// FILTER FAVOURITE AUTHORS
-const faveAuthors = () => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/authors.json?orderBy="favorite"&equalTo=true`)
+// FAVORITE AUTHORS
+const favoriteAuthors = () => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/authors/.json?orderBy="favorite"&equalTo=true`)
     .then((response) => resolve(Object.values(response.data)))
-    .catch(reject);
+    .catch((error) => reject(error));
 });
 
 export {
   getAuthors,
   createAuthor,
-  faveAuthors,
+  favoriteAuthors,
   deleteAuthor,
-  updateAuthor,
-  getSingleAuthor,
+  singleAuthor,
+  updateAuthor
 };

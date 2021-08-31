@@ -1,22 +1,25 @@
+// FIXME: STUDENTS show your authors
+
+import clearDom from '../helpers/clearDom';
+
 const showAuthors = (array) => {
-  document.querySelector('#store').innerHTML = '';
-  // CREATE A BUTTON TO ADD AUTHOR
-  document.querySelector('#add-button').innerHTML = '<button class="btn btn-success btn-lg mb-4" id="add-author-btn">Add An Author</button>';
-  document.querySelector('#form-container').innerHTML = '';
+  clearDom();
+  // CREATE A BUTTON TO ADD BOOKS
+  document.querySelector('#add-button').innerHTML = '<button class="btn btn-success btn-lg mb-4" id="add-author-btn">Add an Author</button>';
 
   array.forEach((item) => {
+    // FIXME: STUDENTS create cards for your authors
     document.querySelector('#store').innerHTML += `
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
+    <div class="card">
+        <div class="card-body" style="height: 180px;">
         <h5 class="card-title">${item.first_name} ${item.last_name}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">${item.email}</h6>
-        <p class="card-text bold">${item.favorite ? `<span class="badge bg-warning text-dark"><i class="fa fa-bell" aria-hidden="true"></i> Favorite</span> ${''}` : ''}</p>
+        <p class="card-text bold">${item.email}</p>
         <hr>
-        <i class="btn btn-success fas fa-eye" id="view-book-btn--${item.firebaseKey}"></i>
-        <button class="btn btn-info" id="edit-author-btn--${item.firebaseKey}">Edit Author</button>
-        <button class="btn btn-danger" id="delete-author--${item.firebaseKey}">Delete Author</button>
+        <i class="btn btn-success fas fa-eye" id="view-author-btn--${item.firebaseKey}"></i>
+        <i id="edit-author-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
+        <i id="delete-author--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"></i>
+        </div>
       </div>
-    </div>
     `;
   });
 };
