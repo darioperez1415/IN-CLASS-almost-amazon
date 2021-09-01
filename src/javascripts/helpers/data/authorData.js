@@ -46,7 +46,8 @@ const updateAuthor = (authorObj) => new Promise((resolve, reject) => {
 // SEARCH AUTHORS
 // FAVORITE AUTHORS
 const favoriteAuthors = () => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/authors/.json?orderBy="favorite"&equalTo=true`)
+  axios
+    .get(`${dbUrl}/authors/.json?orderBy="favorite"&equalTo=true`)
     .then((response) => resolve(Object.values(response.data)))
     .catch((error) => reject(error));
 });
