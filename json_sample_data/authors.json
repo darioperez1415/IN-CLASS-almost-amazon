@@ -1,38 +1,66 @@
 {
-  "-MTpcli73mfiIqW0lpPe": {
-    "firebaseKey": "-MTpcli73mfiIqW0lpPe",
-    "first_name": "Rosmunda",
-    "last_name": "Avann",
-    "email": "ravann1j@smugmug.com"
+  "-MiBsfuTafbEQ7eAULxV" : {
+    "email" : "ta@ta.com",
+    "firebaseKey" : "-MiBsfuTafbEQ7eAULxV",
+    "first_name" : "Tomi",
+    "last_name" : "Adeyemi",
+    "image": "https://assets.vogue.com/photos/5e5d72d330598e00080d5596/4:3/w_1772,h_1329,c_limit/image1%20(1).jpeg",
+    "favorite": true
   },
-  "-MTpcli9kmjpvbdr-ckb": {
-    "firebaseKey": "-MTpcli9kmjpvbdr-ckb",
-    "first_name": "Broderic",
-    "last_name": "Dunrige",
-    "email": "bdunrige1k@symantec.com"
+  "-MiBt86VzkC-EGmJnxjm" : {
+    "email" : "ba@obama.com",
+    "firebaseKey" : "-MiBt86VzkC-EGmJnxjm",
+    "first_name" : "Barack",
+    "last_name" : "Obama",
+    "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/1200px-President_Barack_Obama.jpg",
+    "favorite": true
   },
-  "-MTpcliA_-GtWZHpb8sf": {
-    "firebaseKey": "-MTpcliA_-GtWZHpb8sf",
-    "first_name": "Aurora",
-    "last_name": "Raddish",
-    "email": "araddish1l@liveinternet.ru"
+  "-MiBtwf1BwN9pGavQeR3" : {
+    "email" : "hz@zinn.com",
+    "firebaseKey" : "-MiBtwf1BwN9pGavQeR3",
+    "first_name" : "Howard",
+    "last_name" : "Zinn",
+    "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctGl45wVNLSFbovJxR8Gwd9zeydCJhPQ9Kw&usqp=CAU",
+    "favorite": false
   },
-  "-MTpcliCeUeUNMpZ-Kog": {
-    "firebaseKey": "-MTpcliCeUeUNMpZ-Kog",
-    "first_name": "Darb",
-    "last_name": "Dyke",
-    "email": "ddyke1m@imageshack.us"
+  "-MiBuOfHv9NCKB_cneij" : {
+    "email" : "at@thomas.com",
+    "firebaseKey" : "-MiBuOfHv9NCKB_cneij",
+    "first_name" : "Angie",
+    "last_name" : "Thomas",
+    "image" : "https://images-na.ssl-images-amazon.com/images/I/81rRRmZZvZL.jpg",
+    "favorite": false
   },
-  "-MTpcliDmrp15A1WIE4U": {
-    "firebaseKey": "-MTpcliDmrp15A1WIE4U",
-    "first_name": "Lorette",
-    "last_name": "Clamo",
-    "email": "lclamo1n@imgur.com"
+  "-MiBulenBnY8by9Xn7q1" : {
+    "email" : "cw@whithead.com",
+    "firebaseKey" : "-MiBulenBnY8by9Xn7q1",
+    "first_name" : "Colson",
+    "last_name" : "Whitehead",
+    "image" : "https://images-na.ssl-images-amazon.com/images/I/A1Cu4ywUeyL.jpg",
+    "favorite": false
   },
-  "-MTpcliGnhDSsyvILIoJ": {
-    "firebaseKey": "-MTpcliGnhDSsyvILIoJ",
-    "first_name": "Mickie",
-    "last_name": "Schlagman",
-    "email": "mschlagman1o@miitbeian.gov.cn"
+  "-MiBv9_aOEJQWoobjz_U" : {
+    "email" : "mk@kendall.com",
+    "firebaseKey" : "-MiBv9_aOEJQWoobjz_U",
+    "first_name" : "Mikki",
+    "last_name" : "Kendall",
+    "image" : "https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale/jackets/9781526622402.jpg",
+    "favorite": true
+  },
+  "-MiBvQiWr6XNwNa1i3-0" : {
+    "email" : "lm@lm.com",
+    "firebaseKey" : "-MiBvQiWr6XNwNa1i3-0",
+    "first_name" : "L.L",
+    "last_name" : "McKinney",
+    "image" : "https://images-na.ssl-images-amazon.com/images/I/81Uf1dTjfQL.jpg",
+    "favorite": true
+  },
+  "-MiBw4tCvNZd23yTVDQw" : {
+    "email" : "jb@baldwin.com",
+    "firebaseKey" : "-MiBw4tCvNZd23yTVDQw",
+    "first_name" : "James",
+    "last_name" : "Baldwin",
+    "image" : "https://images-na.ssl-images-amazon.com/images/I/61GSqXVhhKL.jpg",
+    "favorite": false
   }
 }

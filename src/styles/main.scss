@@ -82,3 +82,17 @@ body {
     }
   }
 }
+
+#view {
+  width: 90%;
+  margin: auto;
+
+  .details {
+    min-width: 50%;
+    max-width: 60%;
+  }
+
+  .description {
+    white-space: pre-wrap;
+  }
+}
