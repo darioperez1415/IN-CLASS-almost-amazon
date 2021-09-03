@@ -5,6 +5,7 @@
     "first_name" : "Tomi",
     "last_name" : "Adeyemi",
     "image": "https://assets.vogue.com/photos/5e5d72d330598e00080d5596/4:3/w_1772,h_1329,c_limit/image1%20(1).jpeg",
+    "description": "This is a description of the author",
     "favorite": true
   },
   "-MiBt86VzkC-EGmJnxjm" : {
@@ -13,6 +14,7 @@
     "first_name" : "Barack",
     "last_name" : "Obama",
     "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/1200px-President_Barack_Obama.jpg",
+    "description": "This is a description of the author",
     "favorite": true
   },
   "-MiBtwf1BwN9pGavQeR3" : {
@@ -21,6 +23,8 @@
     "first_name" : "Howard",
     "last_name" : "Zinn",
     "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctGl45wVNLSFbovJxR8Gwd9zeydCJhPQ9Kw&usqp=CAU",
+    "description": "This is a description of the author",
+
     "favorite": false
   },
   "-MiBuOfHv9NCKB_cneij" : {
@@ -29,6 +33,7 @@
     "first_name" : "Angie",
     "last_name" : "Thomas",
     "image" : "https://images-na.ssl-images-amazon.com/images/I/81rRRmZZvZL.jpg",
+    "description": "This is a description of the author",
     "favorite": false
   },
   "-MiBulenBnY8by9Xn7q1" : {
@@ -37,6 +42,7 @@
     "first_name" : "Colson",
     "last_name" : "Whitehead",
     "image" : "https://images-na.ssl-images-amazon.com/images/I/A1Cu4ywUeyL.jpg",
+    "description": "This is a description of the author",
     "favorite": false
   },
   "-MiBv9_aOEJQWoobjz_U" : {
@@ -45,6 +51,7 @@
     "first_name" : "Mikki",
     "last_name" : "Kendall",
     "image" : "https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale/jackets/9781526622402.jpg",
+    "description": "This is a description of the author",
     "favorite": true
   },
   "-MiBvQiWr6XNwNa1i3-0" : {
@@ -53,6 +60,7 @@
     "first_name" : "L.L",
     "last_name" : "McKinney",
     "image" : "https://images-na.ssl-images-amazon.com/images/I/81Uf1dTjfQL.jpg",
+    "description": "This is a description of the author",
     "favorite": true
   },
   "-MiBw4tCvNZd23yTVDQw" : {
@@ -61,6 +69,7 @@
     "first_name" : "James",
     "last_name" : "Baldwin",
     "image" : "https://images-na.ssl-images-amazon.com/images/I/61GSqXVhhKL.jpg",
+    "description": "This is a description of the author",
     "favorite": false
   }
 }

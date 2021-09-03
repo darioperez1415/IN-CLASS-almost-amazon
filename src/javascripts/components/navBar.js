@@ -26,9 +26,8 @@ const navBar = () => {
             <li class="nav-item">
               <a class="nav-link" href="#" id="authors">Authors</a>
             </li>
-            <li>
             <li class="nav-item">
-            <a class="nav-link" href="#" id="favoriteAuthors">Favorite Authors</a>
+              <a class="nav-link" href="#" id="fave-authors">Favorite Authors</a>
             </li>
             <li>
             <input

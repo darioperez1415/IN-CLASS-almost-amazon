@@ -1,8 +1,8 @@
-import { showAuthors } from '../components/authors';
 import signOut from '../helpers/auth/signOut';
-import { getAuthors, favoriteAuthors } from '../helpers/data/authorData';
-import { booksOnSale, getBooks } from '../helpers/data/bookData';
+import { showAuthors } from '../components/authors';
 import { showBooks } from '../components/books';
+import { booksOnSale, getBooks } from '../helpers/data/bookData';
+import { faveAuthors, getAuthors } from '../helpers/data/authorData';
 
 // navigation events
 const navigationEvents = () => {
@@ -12,16 +12,17 @@ const navigationEvents = () => {
 
   // BOOKS ON SALE
   document.querySelector('#sale-books').addEventListener('click', () => {
-    console.warn('Clicked Sale Books');
-    booksOnSale().then((books) => showBooks(books));
+    console.warn('Sale Books');
+    booksOnSale().then(showBooks);
   });
-
+  // FAVE AUTHORS
+  document.querySelector('#fave-authors').addEventListener('click', () => {
+    faveAuthors().then(showAuthors);
+  });
   // ALL BOOKS
   document.querySelector('#all-books').addEventListener('click', () => {
-    console.warn('All Books');
-    getBooks().then((books) => showBooks(books));
+    getBooks().then(showBooks);
   });
-
   // SEARCH
   document.querySelector('#search').addEventListener('keyup', (e) => {
     const searchValue = document.querySelector('#search').value.toLowerCase();
@@ -37,18 +38,13 @@ const navigationEvents = () => {
     }
   });
 
-  document.querySelector('#authors').addEventListener('click', () => {
-    getAuthors().then((authors) => showAuthors(authors));
-  });
-
-  document.querySelector('#favoriteAuthors').addEventListener('click', () => {
-    favoriteAuthors().then((authors) => showAuthors(authors));
-  });
-
   // FIXME: STUDENTS Create an event listener for the Authors
   // 1. When a user clicks the authors link, make a call to firebase to get all authors
   // 2. Convert the response to an array because that is what the makeAuthors function is expecting
   // 3. If the array is empty because there are no authors, make sure to use the emptyAuthor function
+  document.querySelector('#authors').addEventListener('click', () => {
+    getAuthors().then(showAuthors);
+  });
 };
 
 export default navigationEvents;
