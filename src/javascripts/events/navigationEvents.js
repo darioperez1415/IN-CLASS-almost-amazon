@@ -5,7 +5,7 @@ import { booksOnSale, getBooks } from '../helpers/data/bookData';
 import { faveAuthors, getAuthors } from '../helpers/data/authorData';
 
 // navigation events
-const navigationEvents = () => {
+const navigationEvents = (uid) => {
   // LOGOUT BUTTON
   document.querySelector('#logout-button')
     .addEventListener('click', signOut);
@@ -13,7 +13,7 @@ const navigationEvents = () => {
   // BOOKS ON SALE
   document.querySelector('#sale-books').addEventListener('click', () => {
     console.warn('Sale Books');
-    booksOnSale().then(showBooks);
+    booksOnSale(uid).then(showBooks);
   });
   // FAVE AUTHORS
   document.querySelector('#fave-authors').addEventListener('click', () => {
@@ -21,7 +21,7 @@ const navigationEvents = () => {
   });
   // ALL BOOKS
   document.querySelector('#all-books').addEventListener('click', () => {
-    getBooks().then(showBooks);
+    getBooks(uid).then(showBooks);
   });
   // SEARCH
   document.querySelector('#search').addEventListener('keyup', (e) => {

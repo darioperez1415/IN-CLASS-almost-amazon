@@ -6,7 +6,8 @@
     "price": "24.99",
     "description": "We measure progress in the 23 million new jobs that were created when Bill Clinton was President - when the average American family saw its income go up $7,500 instead of down $2,000 like it has under George Bush. I've seen it in Illinois, when we provided health care to more children and moved more families from welfare to work. And it is no coincidence that countries where women are well-educated are far more likely to be prosperous.",
     "sale": false,
-    "title": "A Promised Land"
+    "title": "A Promised Land",
+    "uid":"078Gac5o5aSqtgeWIrwqypIYqZo1"
   },
   "-MiBsknNSQ6aBG1-2lQS": {
     "author_id": "-MiBsfuTafbEQ7eAULxV",
@@ -15,7 +16,8 @@
     "price": "12.99",
     "description": "Let us not wallow in the valley of despair, I say to you today, my friends.And so even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream. ",
     "sale": true,
-    "title": "Children of Blood and Bone"
+    "title": "Children of Blood and Bone",
+    "uid": "078Gac5o5aSqtgeWIrwqypIYqZo1"
   },
   "-MiBuCve4-r_H-RLUOh2": {
     "author_id": "-MiBtwf1BwN9pGavQeR3",
@@ -24,7 +26,8 @@
     "price": "30.00",
     "description": "This is our hope, and this is the faith that I go back to the South with. With this faith, we will be able to hew out of the mountain of despair a stone of hope. With this faith, we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood. With this faith, we will be able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.",
     "sale": false,
-    "title": "A People's History of the United States of America"
+    "title": "A People's History of the United States of America",
+    "uid": "078Gac5o5aSqtgeWIrwqypIYqZo1"
   },
   "-MiBuU13EaKmGOMjJF-X": {
     "author_id": "-MiBuOfHv9NCKB_cneij",
@@ -33,7 +36,8 @@
     "price": "15.89",
     "description": "My country 'tis of thee, sweet land of liberty, of thee I sing. Land where my fathers died, land of the Pilgrim's pride, From every mountainside, let freedom ring! And if America is to be a great nation, this must become true.",
     "sale": false,
-    "title": "Concrete Rose"
+    "title": "Concrete Rose",
+    "uid": "078Gac5o5aSqtgeWIrwqypIYqZo1"
   },
   "-MiBuqoYjFwbXyA8oiiw": {
     "author_id": "-MiBulenBnY8by9Xn7q1",
@@ -42,7 +46,8 @@
     "price": "25.00",
     "description": "Let freedom ring from the curvaceous slopes of California. But not only that: Let freedom ring from Stone Mountain of Georgia. Let freedom ring from Lookout Mountain of Tennessee",
     "sale": true,
-    "title": "The Underground Railroad"
+    "title": "The Underground Railroad",
+    "uid": "078Gac5o5aSqtgeWIrwqypIYqZo1"
   },
   "-MiBvEFJTI3FmTzDu_3V": {
     "author_id": "-MiBv9_aOEJQWoobjz_U",
@@ -51,7 +56,8 @@
     "price": "12.99",
     "description": "Let freedom ring from every hill and molehill of Mississippi. From every mountainside, let freedom ring.",
     "sale": true,
-    "title": "Hood Feminism"
+    "title": "Hood Feminism",
+    "uid": "078Gac5o5aSqtgeWIrwqypIYqZo1"
   },
   "-MiBvW8ME_DvO2GzwQ8D": {
     "author_id": "-MiBvQiWr6XNwNa1i3-0",
@@ -60,7 +66,8 @@
     "price": "15.00",
     "description": "I now come to that part of my life during which I planned, and finally succeeded in making, my escape from slavery",
     "sale": false,
-    "title": "A Blade So Black"
+    "title": "A Blade So Black",
+    "uid": ""
   },
   "-MiBvf3bIyooE6x4nLLB": {
     "author_id": "-MiBvQiWr6XNwNa1i3-0",
@@ -69,7 +76,8 @@
     "price": "14.99",
     "description": "Land where my fathers died, land of the Pilgrim's pride, From every mountainside, let freedom ring! And if America is to be a great nation, this must become true.And so let freedom ring from the prodigious hilltops of New Hampshire",
     "sale": false,
-    "title": "A Dream So Dark"
+    "title": "A Dream So Dark",
+    "uid": ""
   },
   "-MiBwAF5wOY00AYJm7cR": {
     "author_id": "-MiBw4tCvNZd23yTVDQw",
@@ -78,6 +86,7 @@
     "price": "12.00",
     "description": "I still have a dream.Let freedom ring from the mighty mountains of New York. Let freedom ring from the heightening Alleghenies of Pennsylvania. Let freedom ring from the snow-capped Rockies of Colorado",
     "sale": false,
-    "title": "The Fire Next Time"
+    "title": "The Fire Next Time",
+    "uid": ""
   }
 }

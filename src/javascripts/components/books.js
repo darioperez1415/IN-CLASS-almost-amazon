@@ -1,4 +1,4 @@
-import clearDom from '../helpers/clearDom';
+import clearDom from '../helpers/data/clearDom';
 
 const showBooks = (array) => {
   clearDom();
@@ -13,7 +13,7 @@ const showBooks = (array) => {
     <hr>
     <i class="btn btn-success fas fa-eye" id="view-book-btn--${item.firebaseKey}"></i>
     <i id="edit-book-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
-    <i id="delete-book--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"></i>
+    <i id="delete-book-btn--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"></i>
     </div>
 </div>`;
   });

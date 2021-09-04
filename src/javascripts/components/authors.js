@@ -1,5 +1,5 @@
 // FIXME: STUDENTS show your authors
-import clearDom from '../helpers/clearDom';
+import clearDom from '../helpers/data/clearDom';
 
 const showAuthors = (array) => {
   // CREATE A BUTTON TO ADD BOOKS

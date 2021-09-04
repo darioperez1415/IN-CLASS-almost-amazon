@@ -1,4 +1,4 @@
-import clearDom from '../helpers/clearDom';
+import clearDom from '../helpers/data/clearDom';
 
 const viewAuthor = (obj) => {
   clearDom();

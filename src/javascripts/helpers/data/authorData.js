@@ -1,13 +1,15 @@
 import axios from 'axios';
 import firebaseConfig from '../../../api/apiKeys';
+
 // API CALLS FOR AUTHORS
 const dbUrl = firebaseConfig.databaseURL;
-// GET AUTHORS
-const getAuthors = () => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/authors.json`)
+// GET AUTHOR
+const getAuthors = (uid) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/authors.json?orderBy="uid"&equalTo="${uid}"`)
     .then((response) => resolve(Object.values(response.data)))
     .catch((error) => reject(error));
 });
+
 // DELETE AUTHOR
 const deleteAuthor = (firebaseKey) => new Promise((resolve, reject) => {
   axios.delete(`${dbUrl}/authors/${firebaseKey}.json`)
@@ -27,7 +29,7 @@ const createAuthor = (authorObject) => new Promise((resolve, reject) => {
         });
     }).catch((error) => reject(error));
 });
-// GET SINGLE BOOK
+// GET SINGLE AUTHOR
 const getSingleAuthor = (firebaseKey) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/authors/${firebaseKey}.json`)
     .then((response) => resolve(response.data))
@@ -35,12 +37,20 @@ const getSingleAuthor = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 // UPDATE AUTHOR
-const updateAuthor = (authorObj) => new Promise((resolve, reject) => {
-  axios.patch(`${dbUrl}/authors/${authorObj.firebaseKey}.json`, authorObj)
-    .then(() => getAuthors().then(resolve))
+const deleteSingleAuthor = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.delete(`${dbUrl}/authors/${firebaseKey}.json`)
+    .then(() => {
+      getAuthors().then(resolve);
+    }).catch(reject);
+});
+
+// SEARCH AUTHORS
+const getAuthorBooks = (authorId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/books.json?orderBy="author_id"&equalTo="${authorId}"`)
+    .then((response) => resolve(Object.values(response.data)))
     .catch(reject);
 });
-// SEARCH AUTHORS
+
 // FILTER FAVORITE AUTHORS
 const faveAuthors = () => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/authors.json?orderBy="favorite"&equalTo=true`)
@@ -53,6 +63,7 @@ export {
   createAuthor,
   faveAuthors,
   deleteAuthor,
-  updateAuthor,
   getSingleAuthor,
+  deleteSingleAuthor,
+  getAuthorBooks
 };
