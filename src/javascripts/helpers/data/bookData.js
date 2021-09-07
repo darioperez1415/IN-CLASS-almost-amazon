@@ -26,7 +26,6 @@ const deleteBook = (firebaseKey, userId) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-
 // CREATE BOOK
 const createBook = (bookObj) => new Promise((resolve, reject) => {
   axios.post(`${dbUrl}/books.json`, bookObj)
