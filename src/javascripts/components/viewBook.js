@@ -1,7 +1,7 @@
-import clearDom from '../helpers/clearDom';
+// import clearDom from '../helpers/clearDom';
 
 const viewBook = (obj) => {
-  clearDom();
+  // clearDom();
   document.querySelector('#view').innerHTML += `
     <div class="mt-5 d-flex flex-wrap">
      <div class="d-flex flex-column">

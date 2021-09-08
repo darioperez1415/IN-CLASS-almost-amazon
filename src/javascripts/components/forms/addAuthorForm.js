@@ -34,4 +34,4 @@ const addAuthorForm = (obj = {}) => {
   `;
 };
 
-export default addAuthorForm;
+export default addAuthorForm();
