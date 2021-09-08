@@ -34,9 +34,19 @@ const domEvents = (uid) => {
       console.warn('CLICKED ADD BOOK BUTTON', e.target.id);
       addBookForm(uid);
     }
+
+    // CLICK EVENT EDITING/UPDATING A BOOK
+    if (e.target.id.includes('edit-book-btn')) {
+      console.warn('CLICKED EDIT BOOK', e.target.id);
+      const [, id] = e.target.id.split('--');
+
+      getSingleBook(id).then((bookObj) => addBookForm(uid, bookObj));
+    }
+
     // CLICK EVENT FOR SUBMITTING FORM FOR ADDING A BOOK
     if (e.target.id.includes('submit-book')) {
       e.preventDefault();
+      console.warn('CLICKED SUBMIT BOOK', e.target.id);
       const bookObject = {
         title: document.querySelector('#title').value,
         image: document.querySelector('#image').value,
@@ -44,17 +54,10 @@ const domEvents = (uid) => {
         description: document.querySelector('#description').value,
         sale: document.querySelector('#sale').checked,
         author_id: document.querySelector('#author_id').value,
-        uid
-        
+        user_id: uid
+
       };
       createBook(bookObject).then((booksArray) => showBooks(booksArray));
-    }
-
-    // CLICK EVENT EDITING/UPDATING A BOOK
-    if (e.target.id.includes('edit-book-btn')) {
-      const [, id] = e.target.id.split('--');
-
-      getSingleBook(id).then((bookObj) => addBookForm(uid, bookObj));
     }
 
     // CLICK EVENT FOR EDITING A BOOK
