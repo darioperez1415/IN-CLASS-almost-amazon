@@ -105,7 +105,6 @@ const domEvents = (uid) => {
         first_name: document.querySelector('#first_name').value,
         last_name: document.querySelector('#last_name').value,
         email: document.querySelector('#email').value,
-        image: document.querySelector('#image').value,
         description: document.querySelector('#description').value,
         favorite: document.querySelector('#favorite').checked,
         uid
@@ -114,7 +113,7 @@ const domEvents = (uid) => {
       createAuthor(authorObject).then(showAuthors);
     }
 
-    // CLICK EVENT FOR EDITING/UPDATING AN AUTHOR
+    // ADD CLICK EVENT FOR SUBMITTING AUTH
     if (e.target.id.includes('edit-author-btn')) {
       const [, id] = e.target.id.split('--');
       getSingleAuthor(id).then((authorObj) => addAuthorForm(authorObj));
@@ -123,19 +122,17 @@ const domEvents = (uid) => {
     // CLICK EVENT FOR EDITING AN AUTHOR
     if (e.target.id.includes('update-author')) {
       e.preventDefault();
-      const [, firebaseKey] = e.target.id.split('--');
+      const [, id] = e.target.id.split('--');
       const authorObject = {
         first_name: document.querySelector('#first_name').value,
         last_name: document.querySelector('#last_name').value,
         email: document.querySelector('#email').value,
-        image: document.querySelector('#image').value,
         description: document.querySelector('#description').value,
         favorite: document.querySelector('#favorite').checked,
-        firebaseKey,
-        uid
+        firebaseKey: id
       };
 
-      updateAuthor(authorObject).then(showAuthors);
+      updateAuthor(authorObject, uid).then(showAuthors);
     }
 
     // ADD CLICK EVENT FOR VIEWING AN AUTHOR

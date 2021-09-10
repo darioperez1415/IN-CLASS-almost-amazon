@@ -17,9 +17,6 @@ const addAuthorForm = (obj = {}) => {
         <label for="description">Description</label>
         <textarea class="form-control" placeholder="Author Description" id="description" style="height: 100px">${obj.description || ''}</textarea>
       </div>
-      <div class="form-group">
-        <label for="image">Image URL</label>
-        <input type="url" class="form-control" id="image" placeholder="Image URL" value="${obj.image || ''}" required>
       </div>
       <div class="form-group">
         <label for="email">Email</label>

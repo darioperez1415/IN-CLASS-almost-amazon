@@ -25,6 +25,7 @@ const showAuthors = (array) => {
       </div>
     `;
   });
+  console.warn(showAuthors);
 };
 
 const emptyAuthors = () => {
