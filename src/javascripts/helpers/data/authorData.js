@@ -48,6 +48,13 @@ const updateAuthor = (authorObj) => new Promise((resolve, reject) => {
 
 // FIXME:SEARCH AUTHORS
 
+// GET AUTH BOOKS
+const getAuthBooks = (authorId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/Books.json?orderBy="author_id"&equalTo="${authorId}"`)
+    .then((response) => resolve(Object.values(response.data)))
+    .catch((reject));
+});
+
 // FILTER FAVORITE AUTHORS
 const favoriteAuthors = (userId) => new Promise((resolve, reject) => {
   getAuthors(userId)
@@ -63,5 +70,6 @@ export {
   favoriteAuthors,
   deleteAuthor,
   getSingleAuthor,
-  updateAuthor
+  updateAuthor,
+  getAuthBooks
 };

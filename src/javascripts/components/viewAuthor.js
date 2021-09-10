@@ -27,7 +27,11 @@ const viewAuthor = (obj) => {
         <div class="card-body" style="height: 100px;">
           <h5 class="card-title">${item.title}</h5>
           <p class="card-text bold">${item.sale ? `<span class="badge bg-info"><i class="fa fa-bell" aria-hidden="true"></i> Sale</span> $${item.price}` : `$${item.price}`}</p>
-        </div>
+          <i id="view-book-btn--${item.firebaseKey}" class="btn btn-success fas fa-eye"></i>
+              <i id="edit-book-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
+              <i id="delete-book--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"></i>
+              <hr>
+          </div>
       </div>
     `;
   });
